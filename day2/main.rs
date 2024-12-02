@@ -6,19 +6,11 @@ fn main() {
     if let Ok(lines) = read_lines("input.txt") {
         let mut count = 0;
         for line in lines.flatten() {
-            let mut is_safe = true;
-            let nums: Vec<&str> = line.split_whitespace().collect();
-            let is_incr = nums[0].parse::<i32>().unwrap() < nums[1].parse::<i32>().unwrap();
-            for i in 0..nums.len() - 1 {
-                let current = nums[i].parse::<i32>().unwrap();
-                let next = nums[i + 1].parse::<i32>().unwrap();
-                let diff =  current - next;
-                if is_incr && current > next || !is_incr && current < next || diff.abs() < 1 || diff.abs() > 3 {
-                    is_safe = false;
-                    break;
-                }
-            }
-            if is_safe {
+            let nums: Vec<i32> = line
+                .split_whitespace()
+                .map(|s| s.parse::<i32>().unwrap())
+                .collect();
+            if safe_check(&nums, nums[0] < nums[1]) {
                 count += 1;
             }
         }
@@ -27,7 +19,22 @@ fn main() {
 }
 
 fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
-where P: AsRef<Path>, {
+where
+    P: AsRef<Path>,
+{
     let file = File::open(filename)?;
     Ok(io::BufReader::new(file).lines())
+}
+
+fn safe_check(nums: &Vec<i32>, is_ascending: bool) -> bool {
+    for i in 0..nums.len() - 1 {
+        let current = nums[i];
+        let next = nums[i + 1];
+        let diff = (current - next).abs();
+        if is_ascending && current > next || !is_ascending && current < next || diff < 1 || diff > 3
+        {
+            return false;
+        }
+    }
+    true
 }
