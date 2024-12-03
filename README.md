@@ -14,3 +14,4 @@ Solutions for AdventOfCode2024
     - Part Two: Solved in Rust
 - [Day 3](https://adventofcode.com/2024/day/3):
     - Part One: Solved in Bash
+    - Part Two: Solved in Bash
