@@ -15,3 +15,15 @@ Solutions for AdventOfCode2024
 - [Day 3](https://adventofcode.com/2024/day/3):
     - Part One: Solved in Bash
     - Part Two: Solved in Bash
+- [Day 4](https://adventofcode.com/2024/day/4):
+    - Part One: Solved in Python
+    - Part Two: Solved in Python
+- [Day 5](https://adventofcode.com/2024/day/5):
+    - Part One: Solved in Python
+    - Part Two: Solved in Python
+- [Day 6](https://adventofcode.com/2024/day/6):
+    - Part One: Solved in C
+    - Part Two: Solved in C
+- [Day 7](https://adventofcode.com/2024/day/7):
+    - Part One: Solved in Python
+    - Part Two: Solved in Python
