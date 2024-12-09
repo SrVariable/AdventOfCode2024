@@ -30,3 +30,6 @@ Solutions for AdventOfCode2024
 - [Day 8](https://adventofcode.com/2024/day/8):
     - Part One: Solved in Rust
     - Part Two: Solved in Rust
+- [Day 9](https://adventofcode.com/2024/day/9):
+    - Part One: Solved in Rust
+    - Part Two: Solved in Rust
