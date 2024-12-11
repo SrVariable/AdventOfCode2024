@@ -33,3 +33,6 @@ Solutions for AdventOfCode2024
 - [Day 9](https://adventofcode.com/2024/day/9):
     - Part One: Solved in Rust
     - Part Two: Solved in Rust
+- [Day 10](https://adventofcode.com/2024/day/10):
+    - Part One: Solved in Java
+    - Part Two: Solved in Java
