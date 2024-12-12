@@ -36,3 +36,6 @@ Solutions for AdventOfCode2024
 - [Day 10](https://adventofcode.com/2024/day/10):
     - Part One: Solved in Java
     - Part Two: Solved in Java
+- [Day 11](https://adventofcode.com/2024/day/11):
+    - Part One: Solved in Rust
+    - Part Two: Solved in Rust
